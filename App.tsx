@@ -1,19 +1,25 @@
 import React from 'react'
-import { StatusBar } from 'expo-status-bar'
+import { ActivityIndicator } from 'react-native'
 
-import { Text, View } from 'react-native'
-
-import { ThemeProvider } from 'styled-components'
-
+import { ThemeProvider } from 'styled-components/native'
 import theme from './src/global/styles/theme'
 
+import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto'
+
+import { Home } from './src/screen/Home'
+
 export default function App() {
+  const [loadFonts] = useFonts({
+    Roboto_400Regular,
+    Roboto_700Bold
+  })
+
+  if (!loadFonts) {
+    return <ActivityIndicator />
+  }
   return (
     <ThemeProvider theme={theme}>
-      <View >
-        <Text>Cowala Finance</Text>
-        <StatusBar style="auto" />
-      </View>
+      <Home />
     </ThemeProvider>
   )
 
