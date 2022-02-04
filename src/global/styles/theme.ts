@@ -9,6 +9,8 @@ export default {
     success: '#4BD1A0',
 
     title: '#000000',
+    notification: '#d4d4d4',
+
     icon: '#858585',
 
     card_primary: '#F5F5F5',
