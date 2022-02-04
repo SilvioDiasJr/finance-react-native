@@ -4,9 +4,13 @@ import { ActivityIndicator } from 'react-native'
 import { ThemeProvider } from 'styled-components/native'
 import theme from './src/global/styles/theme'
 
-import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto'
+import {
+  useFonts,
+  Roboto_400Regular,
+  Roboto_700Bold
+} from '@expo-google-fonts/roboto'
 
-import { Home } from './src/screen/Home'
+import { Home } from './src/screens/Home'
 
 export default function App() {
   const [loadFonts] = useFonts({
@@ -22,6 +26,4 @@ export default function App() {
       <Home />
     </ThemeProvider>
   )
-
 }
-
