@@ -121,8 +121,8 @@ export const Home: React.FC = () => {
             ))
           ) : (
             <Notification>
-              Selecione uma moeda acima e pressione o botão com{' '}
-              <Icon name="plus" /> para adicionar uma nova cotação.
+              Selecione uma moeda acima e pressione o botão <Icon name="plus" />{' '}
+              para adicionar uma nova cotação.
             </Notification>
           )}
         </Content>
