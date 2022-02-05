@@ -67,12 +67,12 @@ export const SelectCurrency: React.FC<Props> = ({
             'Erro de comunicação',
             'Limite de requisição excedido no momento!',
             [
+              { text: 'Cancelar' },
               {
                 text: 'Tentar novamente!',
                 onPress: getCoinsOptions,
                 style: 'destructive'
-              },
-              { text: 'Cancelar' }
+              }
             ]
           )
         }
