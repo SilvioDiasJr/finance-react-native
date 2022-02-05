@@ -39,7 +39,7 @@ A aplicação permite verificar a cotação de várias criptomoedas através da 
 
 ```bash
 
-$ git clone https://github.com/SilvioDiasJr/plantManager-React-Native
+$ git clone https://github.com/SilvioDiasJr/finance-react-native
 
 # entre na pasta do projeto
 
